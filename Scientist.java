@@ -19,7 +19,13 @@ public class Scientist {
             position[dimension-1]=proposedSatus;
         } */
         
-        position[6] = uni[position[0]][position[1]][position[2]][position[3]][position[4]];
+        int i = position[0];
+        int j = position[1];
+        int k = position[2];
+        int l = position[3];
+        int m = position[4];
+        
+        position[5] = uni.getter(i, j, k, l, m);
         
         return position;
     }

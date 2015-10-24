@@ -1,9 +1,9 @@
 import java.util.Scanner;
 public class Lab08 {
     public static void main(String[] args) {
-        Universe uni = new Universe;
+        Universe uni = new Universe();
         Scientist st = new Scientist(uni);
-        Scanner sc = new Scanner();
+        Scanner sc = new Scanner(System.in);
         int[] position = new int[6];
         
         do {
@@ -17,7 +17,7 @@ public class Lab08 {
             }
             System.out.print("Enter units to travel >");
             int units = sc.nextInt();
-            position = Scientist.move(dimension, units);
+            position = st.move(dimension, units);
             System.out.printf("Location: [ %d %d %d %d %d ] = %s\n", position[0], position[1], position[2], position[3], position[4], color(position[5]));
             
         } while (true);
