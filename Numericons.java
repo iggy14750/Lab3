@@ -14,7 +14,7 @@ public class Numericons {
             }
         }
         return universe;
-    }
+     } else}
     
     public static char[] proceed(char[] universe){
         for (int i =0; i<universe.length; i++){
@@ -24,10 +24,15 @@ public class Numericons {
             } else if (dude == '1'){
                 universe[i] = '2';
             } else if (dude == '2' && i<(universe.length-1)) {
-                /*Only the adults move, but only if there's no one in front of them.
-                If there's a carrot, they eat it and become a baby... cuz... reasons. So, the space they currently occupy has to be changed to '.' and the next is a baby.
+                /*
+		Only the adults move, but only if there's no one 
+		in front of them.  If there's a carrot, they eat it 
+		and become a baby... cuz... reasons. 
+		So, the space they currently occupy has to be changed to 
+		'.' and the next is a baby.
                 if the next space is just empty, they just move in.
-                We then don't want the next space to be considered, so we incriment i.
+                We then don't want the next space to be considered, 
+		so we incriment i.
                 */
                 if (universe[i+1] == '^') {
                     universe[i+1] = '0';
